@@ -628,7 +628,7 @@ with st.sidebar:
     st.markdown("[📄 Download Resume (PDF)](#)")
     st.markdown("[📧 Email Me](mailto:keanocliaso12@gmail.com)")
     st.markdown("[💼 LinkedIn Profile](#)")
-    st.markdown("[💻 GitHub Portfolio](#https://github.com/KOM012)")
+    st.markdown("[💻 GitHub Portfolio](https://github.com/KOM012)")
     
     st.markdown("---")
     
