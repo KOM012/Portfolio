@@ -11,7 +11,7 @@ import os
 # Page configuration
 st.set_page_config(
     page_title="Kean Ocliaso | IT Portfolio",
-    page_icon="💼",
+    page_icon="👨‍🎓",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -541,7 +541,7 @@ with tab5:
             <p>🔗 <strong>LinkedIn:</strong> linkedin.com/in/keanocliaso</p>
             <p>💻 <strong>GitHub:</strong> github.com/KOM012</p>
             <p>🎓 <strong>University:</strong> Saint Paul University Surigao</p>
-            <p>📅 <strong>Graduation:</strong> June 2024</p>
+            <p>📅 <strong>Graduation:</strong> April 2024</p>
         </div>
         """, unsafe_allow_html=True)
         
@@ -557,7 +557,7 @@ with tab5:
                 <li>Project Management Trainee</li>
                 <li>Full-Stack Developer</li>
             </ul>
-            <p><strong>📍 Preferred Location:</strong> Metro Manila or Remote</p>
+            <p><strong>📍 Preferred Location:</strong> Surigao, Cebu or Remote</p>
             <p><strong>📅 Availability:</strong> Full-time from June 2024</p>
         </div>
         """, unsafe_allow_html=True)
@@ -620,7 +620,7 @@ col1, col2, col3 = st.columns(3)
 with col2:
     current_year = datetime.datetime.now().year
     st.markdown(f"<p style='text-align: center; color: #6b7280;'>© {current_year} Kean Ocliaso. All rights reserved.</p>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center; color: #6b7280;'>Built with Python & Streamlit • Last Updated: December 2023</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; color: #6b7280;'>Built with Python & Streamlit • Last Updated: February 2026</p>", unsafe_allow_html=True)
 
 # Sidebar with additional info
 with st.sidebar:
@@ -628,7 +628,7 @@ with st.sidebar:
     st.markdown("[📄 Download Resume (PDF)](#)")
     st.markdown("[📧 Email Me](mailto:keanocliaso12@gmail.com)")
     st.markdown("[💼 LinkedIn Profile](#)")
-    st.markdown("[💻 GitHub Portfolio](#)")
+    st.markdown("[💻 GitHub Portfolio](#https://github.com/KOM012)")
     
     st.markdown("---")
     
@@ -636,7 +636,6 @@ with st.sidebar:
     st.markdown("""
     This portfolio was built using:
     - **Python** with **Streamlit**
-    - **PIL** for image processing
     - Custom CSS styling
     
     Features:
@@ -650,41 +649,17 @@ with st.sidebar:
     
     st.markdown("## Tech Stack Proficiency")
     
-    st.markdown("**Python (Advanced):**")
+    st.markdown("**Python:**")
     st.progress(0.85)
     
     st.markdown("**Android Development:**")
-    st.progress(0.75)
+    st.progress(0.60)
     
     st.markdown("**Java Programming:**")
     st.progress(0.70)
     
     st.markdown("**Web Development:**")
-    st.progress(0.65)
+    st.progress(0.75)
     
     st.markdown("**Project Management:**")
     st.progress(0.80)
-
-# Instructions for email setup
-with st.expander("ℹ️ Email Setup Instructions (For Actual Deployment)"):
-    st.markdown("""
-    ### To enable email functionality:
-    
-    1. **For Gmail:**
-       - Enable "Less Secure App Access" in your Google Account settings
-       - OR Use App Password (recommended):
-         - Go to Google Account → Security → 2-Step Verification → App Passwords
-         - Generate app password for "Mail" on "Other" device
-    
-    2. **Set up Streamlit Secrets:**
-       Create a `.streamlit/secrets.toml` file with:
-       ```toml
-       EMAIL_PASSWORD = "your-app-password-here"
-       ```
-    
-    3. **Alternative:** Use email services like SendGrid, Mailgun, or AWS SES
-    
-    ### Current Implementation:
-    - Without email setup: Messages are stored in session state
-    - With email setup: Messages are sent to keanocliaso12@gmail.com
-    """)
